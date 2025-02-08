@@ -1,0 +1,57 @@
+.about {
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left_about {
+  position: relative;
+  flex-basis: 40%;
+}
+.left_about .about {
+  width: 100%;
+  border-radius: 20px;
+}
+.left_about .play {
+  width: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.right_about {
+  flex-basis: 54%;
+}
+.right_about h3 {
+  color: darkblue;
+}
+
+.right_about h1 {
+  color: navy;
+  max-width: 80%;
+  margin: 10px 0px;
+}
+
+.right_about p {
+  color: gray;
+  font-weight: 400;
+  text-align: justify;
+  margin: 10px 0px;
+}
+
+@media (max-width: 920px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+  .left_about {
+    flex-basis: 100%;
+  }
+  .left_about .about {
+    width: 80%;
+  }
+  .right_about {
+    flex-basis: 100%;
+  }
+}

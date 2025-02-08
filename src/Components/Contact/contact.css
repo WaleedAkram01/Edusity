@@ -1,0 +1,87 @@
+.contact {
+  width: 90%;
+  margin: 40px auto 60px;
+  display: flex;
+  gap: 10%;
+}
+.contact_col {
+  flex-basis: 48%;
+}
+.contact_col p {
+  margin-top: 10px;
+  text-align: justify;
+}
+.message {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.message img {
+  width: 8%;
+}
+ul li {
+  list-style: none;
+  display: flex;
+  margin-top: 6%;
+}
+ul li img {
+  width: 7%;
+  margin-right: 2%;
+}
+.contact_col form input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #e8f5e9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: none;
+}
+.contact_col form label {
+  color: gray;
+}
+
+button {
+  margin-top: 10px;
+  border-radius: 30px;
+  padding: 15px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: blue;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+}
+button img {
+  width: 30px;
+}
+.contact_col span {
+  display: block;
+  margin: 20px 0px;
+}
+
+@media (max-width: 740px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: auto;
+    max-width: 700px;
+  }
+  .contact_col {
+    flex-basis: 100%;
+  }
+
+  .contact_col form input,
+  textarea {
+    margin: 10px auto 20px;
+  }
+}

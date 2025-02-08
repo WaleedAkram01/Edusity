@@ -1,0 +1,141 @@
+.testimonials {
+  margin: 40px auto 80px;
+  position: relative;
+}
+
+.back_icon {
+  position: absolute;
+  top: 50%;
+  left: 0; /* Moved to left */
+  /* Pta Nhii Kia Hua pahly -50% pr chal rhhaa tha. */
+  transform: translateY(50%);
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #212ea0;
+  padding: 15px;
+  margin-left: 25px;
+}
+
+.next_icon {
+  position: absolute;
+  top: 50%;
+  right: 0; /* Stays on the right */
+  transform: translateY(50%);
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #212ea0;
+  padding: 15px;
+  margin-right: 25px;
+}
+
+.slider {
+  /* Iss Ki help sy 200% widrh show nhii ho gi */
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  /* This is the total width. */
+  width: 200%;
+  /* This is the increment for testimonials. */
+  /* transform: translateX(-25%); */
+  transition: 0.5s;
+}
+
+.slider ul li {
+  list-style: none;
+  /* This is width of each slide / li */
+  width: 50%;
+  padding: 20px;
+}
+
+.slide {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+  color: #676767;
+  line-height: 1.4;
+}
+
+.slide .user_info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user_info img {
+  border: 4px solid blue;
+  width: 15%;
+  border-radius: 50%;
+}
+
+@media (max-width: 1040px) {
+  .back_icon {
+    margin-left: 0px;
+  }
+  .next_icon {
+    margin-right: 0px;
+  }
+  .user_info img {
+    width: 19%;
+  }
+}
+
+@media (max-width: 860px) {
+  .slider ul li {
+    width: 50%;
+  }
+
+  .slide {
+    padding: 30px;
+  }
+
+  .slide .user_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .user_info img {
+    width: 20%;
+  }
+}
+
+@media (max-width: 575px) {
+  .back_icon {
+    width: 35px;
+    padding: 10px;
+  }
+
+  .next_icon {
+    width: 35px;
+    padding: 10px;
+  }
+
+  .slider ul li {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .slide {
+    padding: 20px;
+  }
+
+  .user_info img {
+    border: 2px solid blue;
+    width: 30%;
+  }
+  .user_info h3 {
+    font-size: 15px;
+  }
+  .user_info p {
+    font-size: 20px;
+  }
+  .slide p {
+    font-size: 12px;
+    text-align: justify;
+  }
+}

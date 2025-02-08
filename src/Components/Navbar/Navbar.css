@@ -1,0 +1,101 @@
+.navbar {
+  width: 100%;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* So that it can overlap all elements of WebPage */
+  z-index: 10;
+}
+
+.navbar img {
+  width: 180px;
+}
+
+.navbar ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbar .Btn {
+  background: navy;
+  border: none;
+  outline: none;
+  padding: 14px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.darknav {
+  background-color: #212ea0;
+  transition: 0.5s;
+}
+
+.menu {
+  display: none;
+}
+
+/* Media Queries */
+@media (max-width: 1000px) {
+  .navbar img {
+    margin: 15px 0px;
+    width: 140px;
+  }
+  .navbar ul li {
+    margin: 0px 10px;
+  }
+
+  .navbar .Btn {
+    background: navy;
+    border: none;
+    outline: none;
+    padding: 15px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 800px) {
+  .navbar ul {
+    width: 200px;
+    height: 100vh;
+    background-color: #212ea0;
+    padding-top: 80px;
+    top: 0px;
+    /* Like width:200px hai Agr Hm right property mai  right: -200px; tou sraa content hide ho jai ga.*/
+    /* right: 0px; */
+    bottom: 0px;
+    position: fixed;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  .navbar ul li {
+    display: block;
+    margin: 20px 20px;
+  }
+  .navbar .Btn {
+    background: navy;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .navbar .menu {
+    display: block;
+    width: 30px;
+    cursor: pointer;
+  }
+  .hide-mobile-menu {
+    right: -200px;
+  }
+  .show-mobile-menu {
+    right: 0px;
+  }
+}
