@@ -1,5 +1,5 @@
 import React from "react";
-import "./Contact.css";
+import "./contact.css";
 import Location from "../../assets/location-icon.png";
 import Phone from "../../assets/phone-icon.png";
 import Message from "../../assets/msg-icon.png";
