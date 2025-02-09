@@ -1,8 +1,8 @@
 import React from "react";
-import About from "../../assets/About.png";
+import About from "../../assets/about.png";
 import Play_Icon from "../../assets/play-icon.png";
 import "./about.css";
-function about({ setPlayState }) {
+function About({ setPlayState }) {
   return (
     <div className="about container">
       <div className="left_about">
@@ -35,4 +35,4 @@ function about({ setPlayState }) {
   );
 }
 
-export default about;
+export default About;

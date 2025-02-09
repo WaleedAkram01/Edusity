@@ -3,7 +3,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import Programs from "./Components/Programs/Programs";
 import Title from "./Components/Title/title";
-import About from "./Components/About/about";
+import About from "./Components/About/About";
 import Gallery from "./Components/Gallery/gallery";
 import Testimonials from "./Components/Testimonials/testimonials";
 import Contact from "./Components/Contact/contact";
